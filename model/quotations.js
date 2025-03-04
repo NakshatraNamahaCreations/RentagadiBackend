@@ -76,7 +76,7 @@ const QuotationSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ["pending", "send"],
+    enum: ["pending", "sent"],
     default: "pending",
   },
   
