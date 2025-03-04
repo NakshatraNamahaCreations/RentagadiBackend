@@ -438,6 +438,9 @@ class ProductManagement {
             as: "inventory",
           },
         },
+         {
+          $sort: { createdAt: -1 }
+        }
       ]);
       if (Data) {
         return res.json({ ProductsData: Data });
